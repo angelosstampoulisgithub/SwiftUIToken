@@ -7,7 +7,6 @@
 
 import Foundation
 actor API {
-
     func login(username: String, password: String) async throws -> String {
         let url = URL(string: "https://dummyjson.com/auth/login")!
         var request = URLRequest(url: url)
