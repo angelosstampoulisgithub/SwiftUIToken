@@ -14,10 +14,10 @@
 		D600C9A12F412E1400F48392 /* SwiftUITokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600C9A02F412E1400F48392 /* SwiftUITokenTests.swift */; };
 		D600C9AB2F412E1400F48392 /* SwiftUITokenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600C9AA2F412E1400F48392 /* SwiftUITokenUITests.swift */; };
 		D600C9AD2F412E1400F48392 /* SwiftUITokenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600C9AC2F412E1400F48392 /* SwiftUITokenUITestsLaunchTests.swift */; };
-		D600C9BB2F412E4B00F48392 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600C9BA2F412E4B00F48392 /* LoginRequest.swift */; };
-		D600C9BD2F412E6E00F48392 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600C9BC2F412E6E00F48392 /* LoginResponse.swift */; };
 		D600C9C02F412ED900F48392 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600C9BF2F412ED900F48392 /* Service.swift */; };
 		D600C9C32F412F3A00F48392 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600C9C22F412F3A00F48392 /* AuthViewModel.swift */; };
+		D674DDA52F41F91500E2658D /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D674DDA32F41F91500E2658D /* LoginRequest.swift */; };
+		D674DDA62F41F91500E2658D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D674DDA42F41F91500E2658D /* LoginResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,10 +48,10 @@
 		D600C9A62F412E1400F48392 /* SwiftUITokenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITokenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D600C9AA2F412E1400F48392 /* SwiftUITokenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITokenUITests.swift; sourceTree = "<group>"; };
 		D600C9AC2F412E1400F48392 /* SwiftUITokenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITokenUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D600C9BA2F412E4B00F48392 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
-		D600C9BC2F412E6E00F48392 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		D600C9BF2F412ED900F48392 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		D600C9C22F412F3A00F48392 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D674DDA32F41F91500E2658D /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		D674DDA42F41F91500E2658D /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +102,10 @@
 		D600C98E2F412E1200F48392 /* SwiftUIToken */ = {
 			isa = PBXGroup;
 			children = (
+				D674DDA22F41F91500E2658D /* Model */,
 				D600C9C42F412F8900F48392 /* View */,
 				D600C9C12F412F2800F48392 /* ViewModel */,
 				D600C9BE2F412EC700F48392 /* Service */,
-				D600C9B92F412E1B00F48392 /* Model */,
 				D600C98F2F412E1200F48392 /* SwiftUITokenApp.swift */,
 				D600C9932F412E1400F48392 /* Assets.xcassets */,
 				D600C9952F412E1400F48392 /* Preview Content */,
@@ -138,16 +138,6 @@
 			path = SwiftUITokenUITests;
 			sourceTree = "<group>";
 		};
-		D600C9B92F412E1B00F48392 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D600C9BA2F412E4B00F48392 /* LoginRequest.swift */,
-				D600C9BC2F412E6E00F48392 /* LoginResponse.swift */,
-			);
-			name = Model;
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		D600C9BE2F412EC700F48392 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +160,15 @@
 				D600C9912F412E1200F48392 /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D674DDA22F41F91500E2658D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D674DDA32F41F91500E2658D /* LoginRequest.swift */,
+				D674DDA42F41F91500E2658D /* LoginResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,11 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D600C9BB2F412E4B00F48392 /* LoginRequest.swift in Sources */,
 				D600C9922F412E1200F48392 /* ContentView.swift in Sources */,
 				D600C9C32F412F3A00F48392 /* AuthViewModel.swift in Sources */,
+				D674DDA62F41F91500E2658D /* LoginResponse.swift in Sources */,
 				D600C9C02F412ED900F48392 /* Service.swift in Sources */,
-				D600C9BD2F412E6E00F48392 /* LoginResponse.swift in Sources */,
+				D674DDA52F41F91500E2658D /* LoginRequest.swift in Sources */,
 				D600C9902F412E1200F48392 /* SwiftUITokenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
